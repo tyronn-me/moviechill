@@ -1,0 +1,142 @@
+*, body, html {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	background: #000000;
+}
+
+h1 {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 900;
+}
+
+p {
+	color: rgba(255,255,255,0.5);
+	font-size: 1em;
+	line-height: 1.7em;
+}
+
+/* Global */
+
+#navForm input {
+	background: rgba(0,0,0,0.6);
+	border: none;
+	color: #ffffff;
+	font-size: 0.9em;
+}
+
+.list-group .list-group-item {
+  background: none;
+  border: none;
+  color: #ffffff;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.addTransition {
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+
+/* Homepage */
+
+#featuredMovie {
+	position: relative;
+}
+
+#featureBG {
+	background-size: cover!important;
+	-webkit-background-size: cover!important;
+	-moz-background-size: cover!important;
+	-o-background-size: cover!important;
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  opacity: 0.3;
+}
+
+#featureBG.hide {
+  opacity: 0!important;
+}
+
+#featuredDesc {
+	width: 50%;
+	position: absolute;
+	left: 10%;
+	bottom: 150px;
+}
+
+#featuredDesc h1 {
+	font-size: 3em;
+	color: #ffffff;
+}
+
+#featureNav {
+	position: absolute;
+	left: 10%;
+	bottom: 50px;
+	width: 50%;
+	z-index: 2;
+}
+
+#featureNav ul {
+	margin: 0;
+	padding: 0;
+}
+
+#featureNav ul li {
+	float: left;
+	width: 20%;
+	list-style: none;
+	font-size: 0.7em;
+	color: rgba(255,255,255,0.5);
+	border-bottom: rgba(255,255,255,0.5) 2px solid;
+	padding: 10px;
+	cursor: pointer;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+}
+
+#featureNav ul li.active {
+	color: rgba(255,255,255,1.0);
+	border-bottom: rgba(255,255,255,1.0) 2px solid;
+}
+
+.movieDetItems li {
+  font-size: 0.8em;
+}
+
+.list-group-item i {
+  padding-left: 5px;
+}
+
+.moreInfo {
+  color: #ffffff;
+  background: #0d6efd;
+  padding: 10px 30px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -o-border-radius: 20px;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.moreInfo:hover {
+  color: #ffffff;
+  background: rgba(0,0,0,0.5);
+}
